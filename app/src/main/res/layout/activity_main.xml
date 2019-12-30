@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ViewFlipper
+            android:layout_marginTop="5dp"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/viewFlipper_id">
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    card_view:cardElevation="5dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/season_title"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="#000000"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        card_view:cardUseCompatPadding="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        card_view:cardElevation="5dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/season_title"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="#000000"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="12dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="8dp"
+                        android:clickable="true"
+                        android:id="@+id/cow_btn_id"
+                        android:elevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/cow_button"/>
+
+                            <View
+                                android:layout_width="120dp"
+                                android:layout_height="2dp"
+                                android:background="#161486"
+                                android:layout_margin="3dp"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="গরু পালন"
+                                android:textSize="16sp"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:id="@+id/fish_btn_id"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="8dp"
+                        android:elevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/fish_button"/>
+
+                            <View
+                                android:layout_width="120dp"
+                                android:layout_height="2dp"
+                                android:background="#161486"
+                                android:layout_margin="3dp"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মাছ চাষ"
+                                android:textSize="16sp"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

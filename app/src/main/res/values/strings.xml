@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">চাষী ভাই</string>
+
+    <string name="a1">MD SUMON SARDER\n sumonsarder.cse@gmail.com</string>
+    <string name="a2">SHAHRIAR RAHAMAN\n shihabcse1@gmail.com</string>
+    <string name="a3">MD FOYSAL AHMED\n foysalahmeddiu@gmail.com</string>
+
+    <string-array name="season_button">
+        <item>গ্রীষ্মকাল</item>
+        <item>বর্ষাকাল</item>
+        <item>শরৎকাল</item>
+        <item>হেমন্তকাল</item>
+        <item>শীতকাল</item>
+        <item>বসন্তকাল</item>
+
+    </string-array>
+    <string name="season_title">ঋতু নির্বাচন করুন</string>
+    <string name="animal_title">যেকোনো একটি নির্বাচন করুন</string>
+
+    <string-array name="summer_item">
+        <item>মূলা</item>
+        <item>ফুলকপি</item>
+        <item>শসা</item>
+        <item>পাতা কপি</item>
+        <item>ত্তলকপি</item>
+        <item>টমেটো</item>
+        <item>বেগুন</item>
+        <item>ধুন্দুল</item>
+
+    </string-array>
+
+
+    <string-array name="rainy_item">
+        <item>ডেরশ</item>
+        <item>টমেটো</item>
+        <item>গাজর</item>
+        <item>মটরশুটি</item>
+        <item>মূলা</item>
+        <item>আলু</item>
+        <item>কোলা-বাদাম</item>
+        <item>তরমুজ</item>
+
+
+    </string-array>
+
+    <string-array name="autum_item">
+        <item>আপেল</item>
+        <item>ব্ল্যাকবেরি</item>
+        <item>বাঁধাকপি</item>
+        <item>গাজর</item>
+        <item>মূলা</item>
+        <item>ফুলকপি</item>
+        <item>পেঁয়াজ</item>
+        <item>কুমড়</item>
+        <item>কাঁচা মরিচ</item>
+        <item>শালগম</item>
+
+    </string-array>
+
+    <string-array name="lateatom_item">
+        <item>গাজর</item>
+        <item>ফুলকপি</item>
+        <item>বাঁধাকপি</item>
+        <item>ব্রোকলি</item>
+        <item>ব্রাসেলস স্প্রাউটস</item>
+        <item>কুমড়া</item>
+        <item>নাশপাতি</item>
+
+    </string-array>
+
+
+    <string-array name="winter_item">
+        <item>আপেল</item>
+        <item>ব্রাসেলস স্প্রাউটস</item>
+        <item>বাঁধাকপি</item>
+        <item>ফুলকপি</item>
+        <item>গাজর</item>
+        <item>আলু</item>
+        <item>কুমড়া</item>
+        <item>পেঁয়াজ</item>
+        <item>শালগম</item>
+
+    </string-array>
+
+    <string-array name="spring_item">
+        <item>ব্রাসেলস স্প্রাউটস</item>
+        <item>গাজর</item>
+        <item>ফুলকপি</item>
+        <item>মূলা</item>
+        <item>বাঁধাকপি</item>
+        <item>পেঁয়াজ</item>
+        <item>ব্রোকলি</item>
+        <item>আলু</item>
+
+    </string-array>
+
+
+</resources>

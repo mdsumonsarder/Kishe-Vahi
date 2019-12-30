@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/grid_cardview_id"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="8dp"
+                android:clickable="true"
+                card_view:cardBackgroundColor="#ffffff"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+            >
+                <ImageView
+                        android:id="@+id/grid_image_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/summer_button"
+                />
+                <View
+                        android:layout_width="120dp"
+                        android:layout_height="2dp"
+                        android:background="#161486"
+                        android:layout_margin="3dp"
+                />
+                <TextView
+                        android:id="@+id/grid_text_id"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Summer"
+                        android:textSize="16sp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>

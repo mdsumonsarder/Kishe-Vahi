@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sumon.chasivaitest">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".wEATHERActivity"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".ItemDetails7Activity" />
+        <activity android:name=".ItemDetails6Activity" />
+        <activity android:name=".ItemDetails5Activity" />
+        <activity android:name=".ItemDetails4Activity" />
+        <activity android:name=".ItemDetails3Activity" />
+        <activity android:name=".ItemDetails2Activity" />
+        <activity android:name=".ItemDetails1Activity" />
+        <activity android:name=".FishActivity" />
+        <activity android:name=".Cowctivity" />
+        <activity android:name=".SpringActivity" />
+        <activity android:name=".WinterActivity" />
+        <activity android:name=".LateAtomActivity" />
+        <activity android:name=".AtomActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SummerActivity" />
+        <activity android:name=".RainyActivity" />
+        <activity android:name=".ItemDetailsActivity" />
+    </application>
+
+</manifest>

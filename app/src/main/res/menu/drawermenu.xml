@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="পরিচিতি"
+        android:id="@+id/about"
+        android:icon="@drawable/about" />
+
+    <item
+        android:title="আবহাওয়া"
+        android:id="@+id/weather"
+        android:icon="@drawable/sun"/>
+
+
+    <item
+        android:title="কৃষি সেবা"
+        android:id="@+id/hoteline"
+        android:icon="@drawable/call" />
+    <item
+        android:title="শেয়ার করুন"
+        android:id="@+id/share"
+        android:icon="@drawable/share"/>
+
+    <item
+        android:title="হেল্প"
+        android:id="@+id/support"
+        android:icon="@drawable/help"/>
+
+
+    <item
+        android:title="বের হউন"
+        android:id="@+id/signout"
+        android:icon="@drawable/signout"/>
+
+
+
+</menu>

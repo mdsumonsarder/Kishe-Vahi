@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:src="@drawable/profileicon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_margin="16dp"/>
+
+
+    <EditText
+        android:id="@+id/signupemailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint=" ই-মেইল"
+        android:textColor="#1B1B1B"
+        android:textColorHint="#1A1919"
+        android:drawableLeft="@drawable/email"/>
+
+
+    <EditText
+        android:id="@+id/signuppasswordid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint=" পাসওয়ার্ড"
+        android:textColor="#1A1919"
+        android:textColorHint="#1A1919"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/signupbuttonid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="নিবন্ধন করুন"
+        android:background="#ff22"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:id="@+id/signuptextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="আপনি কি ইতিমধ্যে নিবন্ধিত? প্রবেশ করুন"
+        android:gravity="center"
+        android:textColor="#1A1919"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressberid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
