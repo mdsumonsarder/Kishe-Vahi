@@ -7,12 +7,22 @@
     tools:context=".MainActivity"
     android:padding="20dp"
     android:gravity="center"
-    android:background="#FFFFFF"
+
     android:orientation="vertical">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+নিবন্ধন করুন"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
     <ImageView
-        android:src="@drawable/profileicon"
+        android:src="@drawable/dd"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:scaleType="fitXY"
@@ -43,10 +53,10 @@
 
     <Button
         android:id="@+id/signupbuttonid"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="নিবন্ধন করুন"
-        android:background="#ff22"
+        android:background="#8596F3"
         android:textColor="#ffffff"
         android:layout_marginTop="8dp"/>
 

@@ -35,7 +35,7 @@ public class SignInActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
+        getSupportActionBar().hide();
         //To change ActionBar title;
         getSupportActionBar().setTitle("প্রবেশ করুন");
 

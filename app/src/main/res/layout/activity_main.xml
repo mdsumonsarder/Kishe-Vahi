@@ -8,21 +8,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        app:auto_cycle="true"
+        app:delay="0"
+        android:id="@+id/slider1"
+        app:period="1000"
+        app:error_image="@drawable/bg_grey"
+        app:placeholder="@drawable/bg_grey"
+        app:corner_radius="20"
+        android:layout_height="230dp"/>
 
-        <ViewFlipper
-            android:layout_marginTop="5dp"
-            android:layout_margin="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:id="@+id/viewFlipper_id">
 
-
-        </ViewFlipper>
-
-    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"

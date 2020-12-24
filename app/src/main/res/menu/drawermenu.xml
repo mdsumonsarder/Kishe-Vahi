@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
         android:title="পরিচিতি"
         android:id="@+id/about"
@@ -15,7 +16,7 @@
 
     <item
         android:title="কৃষি সেবা"
-        android:id="@+id/hoteline"
+        android:id="@+id/secvice"
         android:icon="@drawable/call" />
     <item
         android:title="শেয়ার করুন"
@@ -24,7 +25,7 @@
 
     <item
         android:title="হেল্প"
-        android:id="@+id/support"
+        android:id="@+id/help"
         android:icon="@drawable/help"/>
 
 

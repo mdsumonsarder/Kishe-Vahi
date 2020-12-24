@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".wEATHERActivity"></activity>
+        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".AgServiceActivity" />
+        <activity android:name=".wEATHERActivity" />
         <activity android:name=".About" />
         <activity android:name=".ItemDetails7Activity" />
         <activity android:name=".ItemDetails6Activity" />
@@ -29,7 +31,7 @@
         <activity android:name=".AtomActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SignInActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

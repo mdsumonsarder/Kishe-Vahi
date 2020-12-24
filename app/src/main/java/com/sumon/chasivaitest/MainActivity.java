@@ -19,14 +19,18 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ViewFlipper viewFlipper;
-    int[] vFlip={R.drawable.p1,R.drawable.p4,R.drawable.p2,R.drawable.banner_6,
-            R.drawable.banner_7};
 
+    //image slider
+    ImageSlider imageSlider;
     int[] gridImg={R.drawable.summer_button,R.drawable.rain_button,R.drawable.autumn_button,R.drawable.late_autumn,
             R.drawable.winter_button,R.drawable.spring_button};
     String[] gridName;
@@ -41,6 +45,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+
+        //for image slider.............
+        imageSlider = findViewById(R.id.slider1);
+        List<SlideModel> slideModels=new ArrayList<>();
+
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80","1st image for agriculture"));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1559884743-74a57598c6c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80","2nd image for agriculture"));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1558289282-647de9fdf608?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80","3rd image for agriculture"));
+        slideModels.add(new SlideModel("https://images.unsplash.com/photo-1536330256861-f31e792c966d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80", "4th image for agriculture"));
+        slideModels.add(new SlideModel ("https://images.unsplash.com/photo-1593425543621-8f231f558b17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80", "5th image for agriculture"));
+        slideModels.add(new SlideModel ("https://images.unsplash.com/photo-1570528780926-6435330f7eb6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80", "6th image for agriculture"));
+
+        imageSlider.setImageList(slideModels,true);
 
         //Logout;
         mAuth = FirebaseAuth.getInstance();
@@ -71,11 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         gridName=getResources().getStringArray(R.array.season_button);
         recyclerView=(RecyclerView)findViewById(R.id.recyclerview_id);
-        viewFlipper=(ViewFlipper)findViewById(R.id.viewFlipper_id);
-        for(int passImg: vFlip)
-        {
-            recvFlipImg(passImg);
-        }
+
 
         customAdapter=new GridCustomAdapter(this,gridImg,gridName);
         recyclerView.setAdapter(customAdapter);
@@ -117,17 +134,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void recvFlipImg(int rcvImg)
-    {
-        ImageView imageView=new ImageView(this);
-        imageView.setImageResource(rcvImg);
-
-        viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(2000);
-        viewFlipper.setAutoStart(true);
-        viewFlipper.setInAnimation(this,android.R.anim.slide_in_left);
-        viewFlipper.setOutAnimation(this,android.R.anim.slide_out_right);
-    }
 
 
     @Override
@@ -142,22 +148,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-         if (item.getItemId()==R.id.about)
+        if (item.getItemId()==R.id.about)
         {
 
             Intent intent = new Intent(MainActivity.this,About.class);
             startActivity(intent);
         }
 
-      else   if (item.getItemId()==R.id.about)
+        else   if (item.getItemId()==R.id.secvice)
         {
 
-            Intent intent = new Intent(MainActivity.this,About.class);
+            Intent intent = new Intent(MainActivity.this,AgServiceActivity.class);
             startActivity(intent);
         }
 
 
-      else   if (item.getItemId()==R.id.weather)
+        else   if (item.getItemId()==R.id.weather)
         {
 
             Intent intent = new Intent(MainActivity.this,wEATHERActivity.class);
@@ -166,20 +172,17 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-      else   if (item.getItemId()==R.id.hoteline)
+        else   if (item.getItemId()==R.id.help)
         {
 
-            Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel:16123"));
 
-            if (ActivityCompat.checkSelfPermission(MainActivity.this,
-                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            }
-            startActivity(callIntent);
+            String phone = "27676";
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+            startActivity(intent);
         }
 
 
-       else if (item.getItemId()==R.id.share)
+        else if (item.getItemId()==R.id.share)
         {
 
             Intent intent = new Intent(Intent.ACTION_SEND);
@@ -195,16 +198,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-       else if (item.getItemId()==R.id.support)
-        {
 
-            //Intent intent = new Intent(MainActivity.this,About.class);
-            //startActivity(intent);
 
-            Toast.makeText(this, "Support", Toast.LENGTH_SHORT).show();
-        }
-
-      else if (item.getItemId()==R.id.signout)
+        else if (item.getItemId()==R.id.signout)
         {
 
             //Intent intent = new Intent(MainActivity.this,About.class);
