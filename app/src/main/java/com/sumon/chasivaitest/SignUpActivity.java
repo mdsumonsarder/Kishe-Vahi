@@ -37,6 +37,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
 
 
+
         //To change ActionBar title
         getSupportActionBar().setTitle("নিবন্ধন করুন");
         getSupportActionBar().setDisplayShowHomeEnabled(true);

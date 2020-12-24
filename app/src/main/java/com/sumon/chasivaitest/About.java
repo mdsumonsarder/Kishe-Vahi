@@ -12,6 +12,7 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+
         //To change ActionBar title
         getSupportActionBar().setTitle("পরিচিতি");
         getSupportActionBar().setDisplayShowHomeEnabled(true);

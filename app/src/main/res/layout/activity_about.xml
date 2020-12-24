@@ -4,39 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/go"
     android:orientation="vertical"
     tools:context=".About">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/a1"
-        android:layout_gravity="center"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        android:layout_marginLeft="10dp"
-        android:padding="8dp"/>
+
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/a2"
         android:layout_gravity="center"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        android:layout_marginLeft="10dp"
-        android:padding="8dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/ff"
+        android:gravity="center"
+        android:text="Developer contact "
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
         android:layout_height="wrap_content"
-        android:text="@string/a3"
-        android:layout_gravity="center"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        android:layout_marginLeft="10dp"
-        android:padding="8dp"/>
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/a1"
+            android:textColor="#C69A13"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:id="@+id/textID2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text= "@string/email_sumonsarder_cse_gmail_com"
+            android:autoLink="email"
+            android:textColorLink="#fff"
+            android:textColor="#C69A13"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text2ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/a4"
+            android:textColor="#C69A13"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:id="@+id/textID22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text= "@string/email_ramim_cse_info_gmail_com"
+            android:autoLink="email"
+            android:textColorLink="#fff"
+            android:textColor="#C69A13"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text3ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/a2"
+            android:textColor="#C69A13"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:id="@+id/textID33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text= "@string/email_shihabcse1_gmail_com"
+            android:autoLink="email"
+            android:textColorLink="#fff"
+            android:textColor="#C69A13"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text4ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/a3"
+            android:textColor="#C69A13"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:id="@+id/textID44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text= "@string/email_foysalahmeddiu_gmail_com"
+            android:autoLink="email"
+            android:textColorLink="#fff"
+            android:textColor="#C69A13"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
 
+
+    </LinearLayout>
 </LinearLayout>

@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">চাষী ভাই</string>
 
-    <string name="a1">MD SUMON SARDER\n sumonsarder.cse@gmail.com</string>
-    <string name="a2">SHAHRIAR RAHAMAN\n shihabcse1@gmail.com</string>
-    <string name="a3">MD FOYSAL AHMED\n foysalahmeddiu@gmail.com</string>
+    <string name="a1">MD. SUMON SARDER</string>
+    <string name="a2">MD. SHAHRIAR RAHAMAN</string>
+    <string name="a3">MD. FOYSAL AHMED</string>
+    <string name="a4">MD. Ramim Hossain</string>
+
+
+    <string name="email_foysalahmeddiu_gmail_com">Email: foysalahmeddiu@gmail.com</string>
+    <string name="email_shihabcse1_gmail_com">Email: shihabcse1@gmail.com</string>
+    <string name="email_ramim_cse_info_gmail_com">Email: ramim.cse.info@gmail.com</string>
+    <string name="email_sumonsarder_cse_gmail_com">Email:sumonsarder.cse@gmail.com</string>
+
 
     <string-array name="season_button">
         <item>গ্রীষ্মকাল</item>
@@ -93,6 +101,10 @@
         <item>আলু</item>
 
     </string-array>
+
+    <string name="d1">* জরিপের মাধ্যমে আবাদী / অনাবাদী জমির পরিমাণ নির্ধারণ।* মৌসুমী ফসলের আবাদ ও উৎপাদন লক্ষ্যমাত্রা নির্ধারন ও বাস্তবায়ন।* ফসলের নীট উৎপাদন নির্ধারণ।* ফসলের গড় ফলন নির্নয়।* বার্ষিক কর্ম-পরিকল্পনা প্রণয়ন ও বাস্তবায়ন।* জাতীয় পর্যায়ে গৃহীত কৃষি বিষয়ক সকল কার্যক্রমে অংশ গ্রহণ।* চাষাবাদের আধুনিক কলাকৌশল ও প্রযুক্তিসমূহ দ্রুত কৃষক পর্যায়ে সম্প্রসারণের উদ্দেশ্যে জাতীয় কৃষি কর্মসূচীর অংশ হিসাবে জেলা ও উপজেলা পর্যায়ে বৃক্ষমেলা,বৃক্ষ রোপণ পক্ষ,কৃষি মেলা,বীজ মেলা,কৃষি যন্ত্রপাতি প্রদর্শনী মেলা,সেমিনার ইত্যাদির আয়োজন করা।</string>
+    <string name="d">উন্নত ও আধুনিক উচ্চ ফলনশীল জাতের উদ্ভাবন ও দ্রুত কৃষক পর্যায়ে সম্প্রসারণ।* সীমিত জমির সুষ্ঠ ও সঠিক ব্যবহার।* জমির উপযুক্ততার ভিত্তিতে ফসলের নিবিড়তা বৃদ্ধি।* পানির অপচয়রোধে পানি সম্পদের সঠিক ব্যবহার* বসতবাড়ীতে পরিত্যক্ত জমির যথার্থ ব্যবহার নিশ্চিতকরণ।* চাষাবাদে আধুনিক কৃষি যন্ত্রপাতির ব্যবহার।* প্রদর্শনী স্থাপনের মাধ্যমে বিভিন্ন কৃষি প্রযুক্তির দ্রুত সম্প্রসারণ।* আধুনিক প্রযুক্তি ব্যাপক প্রচার ও প্রসারের জন্য তথ্য প্রযুক্তি ও প্রচার মাধ্যমের ব্যবহার।</string>
+    <string name="d2">* কীটনাশক সংরক্ষণ,বাজারজাতকরণ ও ব্যবহার বিধি মেনে চলার ব্যাপারে সহায়তা প্রদান।* সার সংক্রান্ত আইনগত সেবা প্রদান।* বৃক্ষ রোপণ বিধি মেনে চলার ব্যাপারে সহায়তা প্রদান।* সেচ যন্ত্র স্থাপন ও ব্যবহার বিষয়ক আইনগত সহায়তা প্রদান।</string>
 
 
 </resources>
